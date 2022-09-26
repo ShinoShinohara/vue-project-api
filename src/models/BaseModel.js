@@ -1,6 +1,6 @@
 const { Model } = require("objection");
 
-class BaseMode extends Model {
+class BaseModel extends Model {
   $beforeInsert() {
     const now = new Date().toISOString();
     this.created_at = now;
